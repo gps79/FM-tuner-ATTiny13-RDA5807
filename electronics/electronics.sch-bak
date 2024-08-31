@@ -1,0 +1,445 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 66D0C658
+P 2350 3850
+F 0 "R1" H 2420 3896 50  0000 L CNN
+F 1 "18KOhm" H 2420 3805 50  0000 L CNN
+F 2 "" V 2280 3850 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 66D0DAF4
+P 3500 3850
+F 0 "R2" H 3570 3896 50  0000 L CNN
+F 1 "18KOhm" H 3570 3805 50  0000 L CNN
+F 2 "" V 3430 3850 50  0001 C CNN
+F 3 "~" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 66D0E2BE
+P 2350 4500
+F 0 "R3" H 2420 4546 50  0000 L CNN
+F 1 "10KOhm" H 2420 4455 50  0000 L CNN
+F 2 "" V 2280 4500 50  0001 C CNN
+F 3 "~" H 2350 4500 50  0001 C CNN
+	1    2350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 66D0E82A
+P 3500 4500
+F 0 "R4" H 3570 4546 50  0000 L CNN
+F 1 "10KOhm" H 3570 4455 50  0000 L CNN
+F 2 "" V 3430 4500 50  0001 C CNN
+F 3 "~" H 3500 4500 50  0001 C CNN
+	1    3500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 66D0EE4C
+P 6700 3450
+F 0 "R5" H 6770 3496 50  0000 L CNN
+F 1 "10KOhm" H 6770 3405 50  0000 L CNN
+F 2 "" V 6630 3450 50  0001 C CNN
+F 3 "~" H 6700 3450 50  0001 C CNN
+	1    6700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13A-SU U1
+U 1 1 66D0FA55
+P 5900 4600
+F 0 "U1" H 5371 4646 50  0000 R CNN
+F 1 "ATtiny13A-SU" H 5371 4555 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 5900 4600 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 5900 4600 50  0001 C CNN
+	1    5900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 66D11074
+P 4550 4050
+F 0 "C1" H 4665 4096 50  0000 L CNN
+F 1 "100nF" H 4665 4005 50  0000 L CNN
+F 2 "" H 4588 3900 50  0001 C CNN
+F 3 "~" H 4550 4050 50  0001 C CNN
+	1    4550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 66D119D5
+P 9000 4600
+F 0 "C2" V 9255 4600 50  0000 C CNN
+F 1 "470uF/5V" V 9164 4600 50  0000 C CNN
+F 2 "" H 9038 4450 50  0001 C CNN
+F 3 "~" H 9000 4600 50  0001 C CNN
+	1    9000 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 66D12709
+P 9050 5100
+F 0 "C3" V 9305 5100 50  0000 C CNN
+F 1 "470uF/5V" V 9214 5100 50  0000 C CNN
+F 2 "" H 9088 4950 50  0001 C CNN
+F 3 "~" H 9050 5100 50  0001 C CNN
+	1    9050 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 66D13044
+P 9400 4600
+F 0 "FB1" V 9674 4600 50  0000 C CNN
+F 1 "Ferrite_Bead 1.8K@100MHz" V 9583 4600 50  0000 C CNN
+F 2 "" V 9330 4600 50  0001 C CNN
+F 3 "~" H 9400 4600 50  0001 C CNN
+	1    9400 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 66D137F1
+P 9450 5100
+F 0 "FB2" V 9724 5100 50  0000 C CNN
+F 1 "Ferrite_Bead 1.8K@100MHz" V 9633 5100 50  0000 C CNN
+F 2 "" V 9380 5100 50  0001 C CNN
+F 3 "~" H 9450 5100 50  0001 C CNN
+	1    9450 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:AudioJack3 J1
+U 1 1 66D14BEE
+P 10200 4250
+F 0 "J1" H 9920 4183 50  0000 R CNN
+F 1 "AudioJack" H 9920 4274 50  0000 R CNN
+F 2 "" H 10200 4250 50  0001 C CNN
+F 3 "~" H 10200 4250 50  0001 C CNN
+	1    10200 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 66D1531B
+P 10000 5200
+F 0 "L1" H 10052 5246 50  0000 L CNN
+F 1 "100nH" H 10052 5155 50  0000 L CNN
+F 2 "" H 10000 5200 50  0001 C CNN
+F 3 "~" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW3
+U 1 1 66D15F02
+P 2800 3400
+F 0 "SW3" V 2754 3648 50  0000 L CNN
+F 1 "Tune up" V 2845 3648 50  0000 L CNN
+F 2 "" H 2800 3700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2800 3700 50  0001 C CNN
+	1    2800 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW4
+U 1 1 66D1702A
+P 3400 3400
+F 0 "SW4" V 3354 3648 50  0000 L CNN
+F 1 "Vol-" V 3445 3648 50  0000 L CNN
+F 2 "" H 3400 3700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3400 3700 50  0001 C CNN
+	1    3400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW5
+U 1 1 66D179A7
+P 4000 3400
+F 0 "SW5" V 3954 3648 50  0000 L CNN
+F 1 "Tune down" V 4045 3648 50  0000 L CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 4000 3700 50  0001 C CNN
+	1    4000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW2
+U 1 1 66D18272
+P 2250 3400
+F 0 "SW2" V 2204 3648 50  0000 L CNN
+F 1 "Vol+" V 2295 3648 50  0000 L CNN
+F 2 "" H 2250 3700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2250 3700 50  0001 C CNN
+	1    2250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery B
+U 1 1 66D192BB
+P 1650 4300
+F 0 "B" H 1758 4346 50  0000 L CNN
+F 1 "3V" H 1758 4255 50  0000 L CNN
+F 2 "" V 1650 4360 50  0001 C CNN
+F 3 "~" V 1650 4360 50  0001 C CNN
+	1    1650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L RDA5807M_module:RDA5807M U2
+U 1 1 66D1AE7C
+P 7900 4600
+F 0 "U2" H 7950 5097 60  0000 C CNN
+F 1 "RDA5807M" H 7950 4991 60  0000 C CNN
+F 2 "" H 8050 4600 60  0000 C CNN
+F 3 "" H 8050 4600 60  0000 C CNN
+	1    7900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 66D1BF5B
+P 1650 3800
+F 0 "SW1" V 1696 3712 50  0000 R CNN
+F 1 "SW_SPST" V 1605 3712 50  0000 R CNN
+F 2 "" H 1650 3800 50  0001 C CNN
+F 3 "~" H 1650 3800 50  0001 C CNN
+	1    1650 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 4350 10000 4350
+Wire Wire Line
+	8400 4550 8750 4550
+Wire Wire Line
+	8750 4550 8750 4600
+Wire Wire Line
+	8750 4600 8850 4600
+Wire Wire Line
+	8400 4650 8650 4650
+Wire Wire Line
+	8650 4650 8650 5100
+Wire Wire Line
+	8650 5100 8900 5100
+Wire Wire Line
+	9150 4600 9250 4600
+Wire Wire Line
+	9200 5100 9300 5100
+Wire Wire Line
+	9600 5100 9900 5100
+Wire Wire Line
+	9900 5100 9900 4150
+Wire Wire Line
+	9900 4150 10000 4150
+Wire Wire Line
+	10000 4250 9800 4250
+Wire Wire Line
+	9800 4250 9800 4600
+Wire Wire Line
+	9800 4600 9550 4600
+Wire Wire Line
+	10000 4350 10000 5050
+Connection ~ 10000 4350
+Wire Wire Line
+	8450 5350 8450 4750
+Wire Wire Line
+	8450 4750 8400 4750
+Wire Wire Line
+	10000 5350 8450 5350
+Wire Wire Line
+	6500 4500 7150 4500
+Wire Wire Line
+	7150 4500 7150 4350
+Wire Wire Line
+	7150 4350 7500 4350
+Wire Wire Line
+	6500 4400 7200 4400
+Wire Wire Line
+	7250 4400 7250 4450
+Wire Wire Line
+	7250 4450 7500 4450
+Wire Wire Line
+	7500 4750 7000 4750
+Wire Wire Line
+	7000 4750 7000 2850
+Wire Wire Line
+	7000 2850 6700 2850
+Wire Wire Line
+	5900 2850 5900 4000
+Wire Wire Line
+	6700 3300 6700 2850
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 2850 5900 2850
+Wire Wire Line
+	6700 3600 6700 4800
+Wire Wire Line
+	6700 4800 6500 4800
+Wire Wire Line
+	4550 2850 5900 2850
+Connection ~ 5900 2850
+Wire Wire Line
+	5900 5200 5900 5350
+Wire Wire Line
+	5900 5350 8450 5350
+Connection ~ 8450 5350
+Wire Wire Line
+	5900 5350 4550 5350
+Connection ~ 5900 5350
+Wire Wire Line
+	4550 3900 4550 2850
+Wire Wire Line
+	4550 4200 4550 5350
+$Comp
+L Device:R R6
+U 1 1 66D3A208
+P 7200 3450
+F 0 "R6" H 7270 3496 50  0000 L CNN
+F 1 "10KOhm" H 7270 3405 50  0000 L CNN
+F 2 "" V 7130 3450 50  0001 C CNN
+F 3 "~" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 66D3AFB2
+P 7500 3450
+F 0 "R7" H 7570 3496 50  0000 L CNN
+F 1 "10KOhm" H 7570 3405 50  0000 L CNN
+F 2 "" V 7430 3450 50  0001 C CNN
+F 3 "~" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2850 7200 2850
+Wire Wire Line
+	7200 2850 7200 3300
+Connection ~ 7000 2850
+Wire Wire Line
+	7200 2850 7500 2850
+Wire Wire Line
+	7500 2850 7500 3300
+Connection ~ 7200 2850
+Wire Wire Line
+	7500 3600 7500 4350
+Connection ~ 7500 4350
+Wire Wire Line
+	7200 3600 7200 4400
+Connection ~ 7200 4400
+Wire Wire Line
+	7200 4400 7250 4400
+Wire Wire Line
+	4550 2850 4100 2850
+Wire Wire Line
+	1650 2850 1650 3600
+Connection ~ 4550 2850
+Wire Wire Line
+	1650 4000 1650 4100
+Wire Wire Line
+	4550 5350 3500 5350
+Wire Wire Line
+	1650 5350 1650 4500
+Connection ~ 4550 5350
+Wire Wire Line
+	2350 4650 2350 5350
+Connection ~ 2350 5350
+Wire Wire Line
+	2350 5350 1650 5350
+Wire Wire Line
+	3500 4650 3500 5350
+Connection ~ 3500 5350
+Wire Wire Line
+	3500 5350 2350 5350
+Wire Wire Line
+	3500 4000 3500 4150
+Wire Wire Line
+	3500 3600 3500 3700
+Wire Wire Line
+	2350 3600 2350 3700
+Wire Wire Line
+	2350 3200 2350 2850
+Connection ~ 2350 2850
+Wire Wire Line
+	2350 2850 1650 2850
+Wire Wire Line
+	2900 3200 2900 2850
+Connection ~ 2900 2850
+Wire Wire Line
+	2900 2850 2350 2850
+Wire Wire Line
+	3500 3200 3500 2850
+Connection ~ 3500 2850
+Wire Wire Line
+	3500 2850 2900 2850
+Wire Wire Line
+	4100 3200 4100 2850
+Connection ~ 4100 2850
+Wire Wire Line
+	4100 2850 3500 2850
+Wire Wire Line
+	3500 4150 4100 4150
+Wire Wire Line
+	4100 4150 4100 3600
+Connection ~ 3500 4150
+Wire Wire Line
+	3500 4150 3500 4350
+Wire Wire Line
+	5000 4150 4100 4150
+Connection ~ 4100 4150
+Wire Wire Line
+	6500 4600 6550 4600
+Wire Wire Line
+	6550 4600 6550 3900
+Wire Wire Line
+	6550 3900 5000 3900
+Wire Wire Line
+	5000 3900 5000 4150
+Wire Wire Line
+	2350 4250 2900 4250
+Wire Wire Line
+	5100 4250 5100 3950
+Wire Wire Line
+	5100 3950 6600 3950
+Wire Wire Line
+	6600 3950 6600 4700
+Wire Wire Line
+	6600 4700 6500 4700
+Connection ~ 2350 4250
+Wire Wire Line
+	2350 4250 2350 4350
+Connection ~ 2900 4250
+Wire Wire Line
+	2900 4250 5100 4250
+Wire Wire Line
+	2350 4000 2350 4250
+Wire Wire Line
+	2900 3600 2900 4250
+$EndSCHEMATC
